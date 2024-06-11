@@ -1,1 +1,3 @@
-# fakedns
+# fakedns.py
+Das alte fakedns.py script ist obsolet, weil python 2.7 nicht weiter gepflegt wird. Es musste ein Ersatz her für den media2x. Beim Durchforsten von github konnten mehrere fakedns Server gefunden werden. Das C't Flugblatt verwendete in der ursprünglichen Version den mini-fake-dns-server von Francisco Santos (gracias Francisco) bei active-state https://code.activestate.com/recipes/491264-mini-fake-dns-server/ Ich nahm mir die Freiheit davon einen fork anzulegen und portierte das programm auf python 3.
+Wer das Programm nutzt tut dies auf eigenes Risiko. Ich kann keine Verantwortung für Risiken und Schädaen dafür übernehmen. Ausnahmsweise bitte ich um Meldung falls damit etwas nicht stimmen sollte.

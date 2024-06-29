@@ -1,4 +1,5 @@
 #!/usr/bin/python 3
+# Under costruction Don t use it !!!!!!!!!!!!!!!!!!!!!!
 # Der code könnte von hier stammen:
 #https://code.activestate.com/recipes/491264-mini-fake-dns-server/
 # Der code wurde von mir nach python3 portiert noch nicht getestet.

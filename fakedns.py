@@ -1,9 +1,9 @@
-#!/usr/bin/python 3
-# Under costruction Don t use it !!!!!!!!!!!!!!!!!!!!!!
-# Der code könnte von hier stammen:
-#https://code.activestate.com/recipes/491264-mini-fake-dns-server/
-# Der code wurde von mir nach python3 portiert noch nicht getestet.
-# Ein erster Start verlief vielversprechend.
+#!/usr/bin/python
+# Der code stammt von activestate.com und wurde von mir Hlife von 2to3 nach python 3 portiert.
+# Erste Versuche verliefen vielversprechend. 
+# 
+# !!!!! will be tested !!!!
+# aufgebrezelt mit 2to3 
 import socket
 
 class DNSQuery:
@@ -33,7 +33,7 @@ class DNSQuery:
 
 if __name__ == '__main__':
   ip='192.168.255.1'
-  print('pyminifakeDNS:: dom.query. 60 IN A %s' % ip)
+  print(('pyminifakeDNS:: dom.query. 60 IN A %s' % ip))
   
   udps = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
   udps.bind(('',53))
@@ -43,7 +43,7 @@ if __name__ == '__main__':
       data, addr = udps.recvfrom(1024)
       p=DNSQuery(data)
       udps.sendto(p.respuesta(ip), addr)
-      print('Respuesta: %s -> %s' % (p.dominio, ip))
+      print(('Respuesta: %s -> %s' % (p.dominio, ip)))
   except KeyboardInterrupt:
     print('Finalizando')
     udps.close()
